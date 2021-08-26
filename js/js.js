@@ -430,9 +430,6 @@ function start() { // Inicio da função start()
 		$("#fim").html("<h1> Game Over </h1><p>Sua pontuação foi: " + pontos + "</p>" + "<div id='reinicia' onClick=reiniciaJogo()><h3>Jogar Novamente</h3></div>");
 	} // Fim da função gameOver();
 
-
-	//Reposiciona Inimigo2
-		
 	function reposicionaInimigo2() {
 		
 		var tempoColisao4=window.setInterval(reposiciona4, 5000);
@@ -450,7 +447,22 @@ function start() { // Inicio da função start()
 			}	
 		}
 
-	//----------------------------------------|-------------------|--------------------------------
+		//Reinicia o Jogo
+		
+		function reiniciaJogo() {
+			somGameover.pause();
+			$("#fim").remove();
+			start();
+			
+		} //Fim da função reiniciaJogo
+
+
+	//Reposiciona Inimigo2
+		
+	
+
+
+
 
 
 
